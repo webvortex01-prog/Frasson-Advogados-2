@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frasson Advogados | Advocacia de Elite</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'frasson-dark': '#262F3E',
+                        'frasson-gold': '#3BA7A7',
+                        'frasson-soft': '#F8FAFC',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="site font-sans">
+
+    <nav class="site-nav fixed top-0 w-full z-50 glass-nav">
+        <div class="site-container container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="site-brand text-xl font-serif font-bold tracking-tighter">
+                FRASSON<span class="text-frasson-gold italic"> ADVOGADOS</span>
+            </div>
+            <div
+                class="site-nav__links hidden md:flex space-x-8 text-[10px] uppercase tracking-widest font-bold text-slate-500">
+                <a href="#home" class="site-nav__link hover:text-frasson-gold transition">Início</a>
+                <a href="#escritorio" class="site-nav__link hover:text-frasson-gold transition">Escritório</a>
+                <a href="#atuacao" class="site-nav__link hover:text-frasson-gold transition">Áreas</a>
+                <a href="#noticias" class="site-nav__link hover:text-frasson-gold transition">Insights</a>
+                <a href="#contato" class="site-nav__link hover:text-frasson-gold transition">Contato</a>
+            </div>
+            <a href="https://wa.me/5511985761561"
+                class="site-cta bg-frasson-dark text-white px-5 py-2 text-[10px] uppercase font-bold tracking-tighter hover:bg-frasson-gold transition">Falar
+                Agora</a>
+        </div>
+    </nav>
+
+    <section id="home"
+        class="hero-section h-screen flex items-center justify-center text-center px-6 bg-frasson-soft relative overflow-hidden">
+        <div
+            class="hero-bg absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')]">
+        </div>
+        <div class="hero-content relative z-10 max-w-4xl">
+            <span
+                class="hero-kicker block text-frasson-gold font-bold text-xs uppercase tracking-[0.4em] mb-6">Excelência
+                Jurídica em São Paulo</span>
+            <h1 class="hero-title font-serif text-5xl md:text-8xl leading-tight text-frasson-dark mb-8">
+                Soluções Criativas para <br><span class="color-#3BA7A7 font-light">Questões Complexas.</span>
+            </h1>
+            <p class="hero-lead text-slate-500 max-w-2xl mx-auto text-lg mb-10 font-light leading-relaxed">
+                Frasson Advogados: Expertise em Direito Digital, LGPD e Imobiliário com foco absoluto em sigilo e
+                resultados.
+            </p>
+            <div class="hero-actions flex justify-center gap-4">
+                <a href="#atuacao"
+                    class="btn btn-primary bg-frasson-dark text-white px-8 py-4 text-xs uppercase font-bold tracking-widest hover:bg-frasson-gold transition">Nossas
+                    Áreas</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="escritorio" class="about-section py-24 bg-white">
+        <div class="site-container container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="about-text">
+                <h2 class="section-title font-serif text-4xl mb-6 italic">O Escritório</h2>
+                <p class="section-text text-slate-600 leading-relaxed mb-6 font-light">
+                    O Frasson Advogados presta serviços jurídicos de excelência, fornecendo soluções eficazes para as
+                    mais diversas questões jurídicas. Nossos valores são ética, transparência e comprometimento
+                    absoluto.
+                </p>
+                <div class="quote border-l-4 border-frasson-gold pl-6 py-2 italic text-slate-500 font-light">
+                    "Garantimos a confidencialidade e o sigilo total das informações de nossos clientes."
+                </div>
+            </div>
+            <div class="about-image h-80 bg-slate-100 overflow-hidden rounded-lg">
+                <img src="img/WhatsApp Image 2026-03-26 at 07.50.52.jpeg"
+                    class="h-full w-auto object-contain object-top" alt="Escritório Frasson Advogados">
+            </div>
+        </div>
+    </section>
+
+    <section id="atuacao" class="practice-section py-24 bg-frasson-soft">
+        <div class="site-container container items-center px-6">
+            <div class="section-header text-center mb-16">
+                <h2 class="section-title font-serif text-4xl mb-2 text-frasson-dark">Expertise Técnica</h2>
+                <p class="section-subtitle text-[10px] uppercase tracking-[0.3em] text-frasson-gold font-bold">Segmentos
+                    de Atuação Especializada</p>
+            </div>
+
+            <div class="area-card practice-card p-10 rounded-sm">
+                <i class="fas fa-city text-frasson-gold text-2xl mb-6 block"></i>
+                <h3 class="font-serif text-xl mb-4">Imobiliário</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">Regularização de imóveis e assessoria em
+                    âmbitos judiciais e extrajudiciais.</p>
+            </div>
+
+            <div class="area-card practice-card p-10 rounded-sm">
+                <i class="fas fa-file-signature text-frasson-gold text-2xl mb-6 block"></i>
+                <h3 class="font-serif text-xl mb-4">Contratos</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">Análise e revisão de instrumentos para
+                    tecnologia e prestação de serviços.</p>
+            </div>
+
+            <div class="area-card practice-card p-10 rounded-sm">
+                <i class="fas fa-user-secret text-frasson-gold text-2xl mb-6 block"></i>
+                <h3 class="font-serif text-xl mb-4">Inventário Extrajudicial</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">Elaboração e assessoria na propositura de
+                    Inventário Extrajudicial/p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="insights-section py-24 bg-white">
+        <div class="site-container container mx-auto px-6">
+            <div
+                class="section-header section-header--split flex justify-between items-end mb-12 border-b border-slate-100 pb-6">
+                <h2 class="section-title font-serif text-4xl italic">Insights Jurídicos</h2>
+                <p class="section-subtitle text-[10px] uppercase font-bold text-slate-400">Notícias e Atualizações</p>
+            </div>
+            <div class="insights-list space-y-2">
+                <div class="news-item insights-item p-6 flex flex-col md:flex-row justify-between items-center group">
+                    <div class="insights-item__content text-left w-full">
+                        <span
+                            class="text-frasson-gold text-[9px] font-bold uppercase tracking-widest mb-1 block">Direito
+                            Digital</span>
+                        <h4 class="text-xl font-serif text-frasson-dark font-bold">O impacto da LGPD no mercado
+                            imobiliário em 2026</h4>
+                    </div>
+                    <span class="text-slate-400 text-[10px] font-bold mt-2 md:mt-0 uppercase">Março 2026</span>
+                </div>
+                <div class="news-item insights-item p-6 flex flex-col md:flex-row justify-between items-center group">
+                    <div class="insights-item__content text-left w-full">
+                        <span
+                            class="text-frasson-gold text-[9px] font-bold uppercase tracking-widest mb-1 block">Cibercrimes</span>
+                        <h4 class="text-xl font-serif text-frasson-dark font-bold">Fraudes no PIX: Como reaver valores
+                            judicialmente</h4>
+                    </div>
+                    <span class="text-slate-400 text-[10px] font-bold mt-2 md:mt-0 uppercase">Fevereiro 2026</span>
+                </div>
+                <div class="news-item insights-item p-6 flex flex-col md:flex-row justify-between items-center group">
+                    <div class="insights-item__content text-left w-full">
+                        <span
+                            class="text-frasson-gold text-[9px] font-bold uppercase tracking-widest mb-1 block">Sucessões</span>
+                        <h4 class="text-xl font-serif text-frasson-dark font-bold">Inventário Extrajudicial:
+                            Desburocratizando a herança</h4>
+                    </div>
+                    <span class="text-slate-400 text-[10px] font-bold mt-2 md:mt-0 uppercase">Janeiro 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="site-footer py-24 bg-frasson-dark text-white">
+        <div class="site-container container mx-auto px-6 grid md:grid-cols-2 gap-16">
+            <div class="contact-block">
+                <h2 class="section-title font-serif text-5xl mb-10 italic text-frasson-gold">Fale Conosco</h2>
+                <div class="contact-list space-y-6 text-slate-400 font-light">
+                    <p><i class="fab fa-whatsapp text-frasson-gold mr-3"></i> (11) 9 8576-1561</p>
+                    <p><i class="far fa-envelope text-frasson-gold mr-3"></i> tfrasson@frassonadvogados.com.br</p>
+                    <p><i class="fas fa-location-dot text-frasson-gold mr-3"></i> Av. Paulista 1471, sala 110 - São
+                        Paulo/SP</p>
+                </div>
+            </div>
+            <form class="contact-form space-y-4">
+                <input type="text" placeholder="Seu Nome"
+                    class="contact-input w-full bg-slate-800 border-none p-4 text-white focus:ring-1 focus:ring-frasson-gold outline-none">
+                <textarea placeholder="Como podemos ajudar?"
+                    class="contact-input w-full bg-slate-800 border-none p-4 text-white h-32 focus:ring-1 focus:ring-frasson-gold outline-none"></textarea>
+                <button
+                    class="btn btn-gold bg-frasson-gold text-frasson-dark w-full py-4 font-bold text-xs uppercase tracking-widest hover:bg-white transition">Enviar
+                    Mensagem</button>
+            </form>
+        </div>
+        <div
+            class="footer-bottom text-center mt-20 text-[10px] text-slate-600 tracking-widest uppercase border-t border-slate-800 pt-10">
+            Frasson Advogados &copy; 2026 | Web Vortex Elite
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animação de entrada suave apenas
+        gsap.from("#home h1, #home p, #home div", {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+    </script>
+</body>
+
+</html>

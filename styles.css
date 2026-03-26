@@ -1,0 +1,60 @@
+/* Frasson Advogados — CSS separado do HTML */
+
+:root {
+  --frasson-dark: #0F172A;
+  --frasson-gold: #00d7d0;
+  --frasson-soft: #F8FAFC;
+  --border-soft: #F1F5F9;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: var(--frasson-dark);
+}
+
+/* Mantém o visual do menu “glass” (antes estava no <style> do HTML) */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+/* Garantindo visibilidade das seções (antes estava no <style> do HTML) */
+section {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Cards de atuação (antes estava no <style> do HTML) */
+.area-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-soft);
+  transition: all 0.4s ease;
+  opacity: 1 !important;
+  align-items: center;
+}
+
+.area-card:hover {
+  border-color: var(--frasson-gold);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Lista de notícias/insights (antes estava no <style> do HTML) */
+.news-item {
+  border-bottom: 1px solid var(--border-soft);
+  transition: all 0.3s ease;
+  opacity: 1 !important;
+}
+
+.news-item:hover {
+  background: var(--frasson-soft);
+  padding-left: 1rem;
+}
+
+/* Remover filtro preto e branco das imagens */
+img {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
